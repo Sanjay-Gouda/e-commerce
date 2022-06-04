@@ -1,0 +1,27 @@
+    /* .product-collection{
+
+        display: flex;
+        width: 100%;
+        border: 2px solid black;
+        padding: 20px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    
+
+    }
+    .pcard{
+        width:25%;
+        border: 1px solid black;
+        margin-right: 10px;
+    } */
+
+
+.product-collection{
+    padding:20px 60px;
+}
+
+.preview{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
