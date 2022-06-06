@@ -4,9 +4,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 export const CustomButton = (props)=>{
 
-    const {btnLabelText,className,handleAddtoCart} = props;
+    const {btnLabelText,className,handleButton} = props;
 
     return (
-        <Button className={className} onClick={handleAddtoCart}>{btnLabelText}</Button>
+        <Button className={className} onClick={handleButton}>{btnLabelText}</Button>
     )
 }

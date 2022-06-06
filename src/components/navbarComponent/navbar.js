@@ -25,10 +25,11 @@ export const Header =()=>{
     return(
         <Navbar bg="primary" variant="dark">
         <Container>
-        <Navbar.Brand href="#home">E-Commerce</Navbar.Brand>
+        <Navbar.Brand onClick= {handleRedirectToHome} style={{cursor: 'pointer'}} >E-Commerce</Navbar.Brand>
         <Nav>
+        
           <Nav.Link  onClick= {handleRedirectToHome}>Home</Nav.Link>
-          <Nav.Link  onClick= {handleRedirect}>Cart <Badge bg="secondary">{cartLength.length}</Badge> </Nav.Link>
+          <Nav.Link  onClick= {handleRedirect}>Cart  <Badge bg="secondary">{cartLength.length}</Badge> </Nav.Link>
           
         </Nav>
         </Container>

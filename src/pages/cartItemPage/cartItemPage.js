@@ -11,10 +11,12 @@ export const CartItemPage = ()=>{
     useEffect(()=>{
 
         let sum = 0;
+        let exactTotal;
         getCartItem.map((item)=>{
             sum = sum+ item.price
+            //  exactTotal= sum.toFixed();
         })
-        // console.log(sum)
+        // console.log(exactTotal)
         setTotal(sum)
 
     },[getCartItem])
@@ -36,7 +38,7 @@ export const CartItemPage = ()=>{
                         <span>Price</span>
                     </div>
                     <div className='header-block'>
-                        <span>remove</span>
+                        <span></span>
                     </div>
                 </div>
                     {
@@ -44,8 +46,6 @@ export const CartItemPage = ()=>{
                         <h3>Your Cart is Empty</h3>
                         
                         :
-
-                        
                             getCartItem.map((item)=>{
                               return (
                                   
@@ -54,9 +54,21 @@ export const CartItemPage = ()=>{
                             })
                         }  
                     
-                      
                    <div className="total">
-                       <p>Total:{total}</p>
+
+                      {
+                        getCartItem.length === 0 ? 
+                        
+                        <p style={{display:'none'}}>Total:{total}</p>
+                        
+                        :
+                        <p style={{display:'block'}}>Total:{total}</p>
+
+                       
+                      }  
+
+
+                      
                     </div>     
             </div>
 

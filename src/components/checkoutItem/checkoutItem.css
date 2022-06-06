@@ -23,3 +23,8 @@ img {
       display: flex;
         justify-content: space-between;
     }
+
+
+    .remove{
+        cursor: pointer;
+    }

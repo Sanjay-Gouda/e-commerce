@@ -1,5 +1,6 @@
 const intialState ={
-    cartItem: []
+    cartItem: [],
+    
 }
 
 export const cartReducer = (state = intialState, action) =>{

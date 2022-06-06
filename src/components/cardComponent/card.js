@@ -12,10 +12,7 @@ export const ProductCard = ({title,image,price,id})=>{
 
     const handleAddtoCart =(id)=>{
         let filterData = getProduct.filter((item)=>item.id===id)
-
         dispatch(cartItem(...filterData))
-        alert("Product added in cart")
-
     }
 
     return(
@@ -27,7 +24,7 @@ export const ProductCard = ({title,image,price,id})=>{
         <div className="collection-footer">
             <span className="name" >{title}</span>
             <p  className="price">Price :{price}</p>
-          <CustomButton  className="btn btn-primary" handleAddtoCart={()=>handleAddtoCart(id)} btnLabelText="Add to Cart"/>
+          <CustomButton  className="btn btn-primary" handleButton={()=>handleAddtoCart(id)} btnLabelText="Add to Cart"/>
         </div>
     </div>
 
